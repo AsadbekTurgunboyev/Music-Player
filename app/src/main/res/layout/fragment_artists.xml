@@ -3,11 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ArtistsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recArtist"
         android:layout_width="match_parent"
+        android:overScrollMode="never"
         android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
         android:padding="20dp"/>
 
 </FrameLayout>

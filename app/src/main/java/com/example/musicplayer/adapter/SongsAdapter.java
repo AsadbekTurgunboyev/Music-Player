@@ -25,7 +25,7 @@ import java.util.List;
 
 public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.MyViewHolder> {
     Context context;
-    ArrayList<SongsModel> list;
+    public static ArrayList<SongsModel> list;
 
     public SongsAdapter(Context context, ArrayList<SongsModel> arrayList) {
         this.context = context;
@@ -83,5 +83,10 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.MyViewHolder
         byte [] rasm = retriever.getEmbeddedPicture();
         retriever.release();
         return rasm;
+    }
+    public void SearchList(ArrayList<SongsModel> songsModelArrayList){
+        list = new ArrayList<>();
+        list.addAll(songsModelArrayList);
+        notifyDataSetChanged();
     }
 }

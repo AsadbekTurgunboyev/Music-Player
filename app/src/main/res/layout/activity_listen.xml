@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/con1" xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -50,6 +51,7 @@
     </Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
@@ -133,6 +135,10 @@
         <SeekBar
             android:id="@+id/seekBar"
             android:layout_width="0dp"
+            android:progressTint="@color/softFloat"
+            android:progressBackgroundTint="#b4b4b4"
+            android:thumbTint="@color/softFloat"
+            android:backgroundTint="@color/softFloat"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="20dp"
@@ -172,7 +178,12 @@
             android:id="@+id/floatingActionButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:backgroundTint="@color/softFloat"
+            android:background="@color/softFloat"
+            app:tint="@color/white"
+            android:backgroundTint="@color/softFloat"
             android:src="@drawable/ic_baseline_pause_24"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

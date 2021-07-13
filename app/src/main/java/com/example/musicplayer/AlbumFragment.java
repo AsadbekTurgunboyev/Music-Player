@@ -16,6 +16,7 @@ import com.example.musicplayer.model.SongsModel;
 
 import java.util.ArrayList;
 
+import static com.example.musicplayer.MainActivity.albums;
 import static com.example.musicplayer.MainActivity.arrayList;
 
 
@@ -36,8 +37,8 @@ public class AlbumFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_album, container, false);
         initView(view);
 
-        if(!(arrayList.size()<1)){
-            albumAdapter = new AlbumAdapter(getContext(),arrayList);
+        if(!(albums.size()<1)){
+            albumAdapter = new AlbumAdapter(getContext(),albums);
             recyclerView.setAdapter(albumAdapter);
         }
         return view;

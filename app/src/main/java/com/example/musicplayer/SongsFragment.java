@@ -26,7 +26,7 @@ import static com.example.musicplayer.MainActivity.arrayList;
 
 public class SongsFragment extends Fragment {
         RecyclerView recyclerView;
-        SongsAdapter adapter ;
+        static SongsAdapter adapter ;
 
     public SongsFragment() {
         // Required empty public constructor
